@@ -143,6 +143,10 @@ namespace Calc
                         {
                             Swap(Convert.ToString(e));
                         }
+                        else if (_operand == "sin" || _operand == "cos")
+                        {
+                            Swap(Convert.ToString(e));
+                        }
                         else
                         {
                             _exprassionStack.Push(Convert.ToString(e));
@@ -159,7 +163,20 @@ namespace Calc
                             if ("(" != s)
                                 Opn.Add(s);
                         }
-
+                        break;
+                    case 's':
+                        if (_expression.Substring(index, 3) == "sin")
+                        {
+                            _exprassionStack.Push("sin");
+                            index += 2;
+                        }
+                        break;
+                    case 'c':
+                        if (_expression.Substring(index, 3) == "cos")
+                        {
+                            _exprassionStack.Push("cos");
+                            index += 2;
+                        }
                         break;
                 }
             }

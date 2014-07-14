@@ -1,5 +1,4 @@
 ﻿
-
 namespace Calc.Calculate
 {
     internal sealed class CalculatorAddition : IOperationCalculator

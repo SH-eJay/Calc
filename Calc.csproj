@@ -43,8 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculate\CalculatorAddition.cs" />
+    <Compile Include="Calculate\CalculatorCosinus.cs" />
     <Compile Include="Calculate\CalculatorDivision.cs" />
     <Compile Include="Calculate\CalculatorMultiplication.cs" />
+    <Compile Include="Calculate\CalculatorSinus.cs" />
+    <Compile Include="Calculate\CalculatorSqrt.cs" />
     <Compile Include="Calculate\CalculatorSubtraction.cs" />
     <Compile Include="Compilator.cs" />
     <Compile Include="IOperationCalculator.cs" />
