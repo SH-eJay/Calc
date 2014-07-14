@@ -11,6 +11,7 @@ namespace Calc
         static void Main(string[] args)
         {
 
+            var s = Convert.ToDouble("33,3");
 
             while (true)
             {

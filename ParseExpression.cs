@@ -85,11 +85,11 @@ namespace Calc
                 {
                     if (((index + 1) != _expression.Length))
                     {
-                        if (_expression[index + 1] == '.')
+                        if (_expression[index + 1] == ',' || char.IsDigit(_expression[index+1]))
                         {
                             var number = "";
                             int l;
-                            for (l = index; char.IsDigit(_expression[l]) || _expression[l] == '.'; l++)
+                            for (l = index; (l < _expression.Length) &&(char.IsDigit(_expression[l]) || _expression[l] == ','); l++)
                             {
                                 number += _expression[l];
                             }
@@ -97,6 +97,7 @@ namespace Calc
                             Opn.Add(number);
                             continue;
                         }
+
                     }
                     Opn.Add(Convert.ToString(e));
                     continue;
